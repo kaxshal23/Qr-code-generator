@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link to QR Code</title>
+    <!-- Include QRCode.js library -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <div id="qrcode"></div>
+    <script>
+        // Get the link you want to convert to a QR code
+        var link = "https://example.com"; // Replace with your link
+
+        // Create a new QRCode instance and pass the link as data
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: link,
+            width: 128,
+            height: 128
+        });
+    </script>
+</body>
+</html>
